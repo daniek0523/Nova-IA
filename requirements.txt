@@ -1,5 +1,5 @@
-fastapi
-uvicorn
-groq
-python-dotenv
-opencv-python-headless
+fastapi 
+uvicorn 
+groq 
+python-dotenv 
+opencv-python-headless 
