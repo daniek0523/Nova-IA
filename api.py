@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
-from brain import procesar_mensaje # Tu lógica actual
+from brain import procesar_mensaje
 
 app = FastAPI(title="Nova AI Backend")
 
