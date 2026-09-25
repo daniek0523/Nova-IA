@@ -1,0 +1,13 @@
+from fastapi import FastAPI
+from pydantic import BaseModel
+from brain import procesar_mensaje # Tu lógica actual
+
+app = FastAPI(title="Nova AI Backend")
+
+class UserInput(BaseModel):
+    message: str
+
+@app.post("/chat")
+def chat_endpoint(data: UserInput):
+    respuesta = procesar_mensaje(data.message)
+    return {"response": respuesta}
